@@ -1,0 +1,23 @@
+.FooterDiv
+{
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
+.List
+{
+    width: 80%;
+}
+.IconsList
+{
+    margin-left: 35%;
+}
+.Bttn
+{
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+    width: 50%;
+    font-size: 18px;
+}
