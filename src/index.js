@@ -1,16 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import { Provider } from "react-redux";
-import Store from "./components/store/store";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter } from 'react-router-dom';
+
+import { Provider } from 'react-redux';
+import store from './store/store';
+
+import './../node_modules/bootstrap/dist/css/bootstrap.css';
+import './../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={Store}>
+  <Provider store={store}>
+    <BrowserRouter>
       <App />
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById("root")
+    </BrowserRouter>
+  </Provider>,
+  document.getElementById('root')
 );

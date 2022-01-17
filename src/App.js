@@ -1,13 +1,15 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Movies from "./components/Movies/movieList/index";
-import Navbar from "./components/NavBar/nav";
-import MoviesDetails from "./components/Movies/movieDetails/index";
-import Footer from "./components/footer/footer";
+import { Route } from 'react-router-dom';
+
+import Movies from './components/movies';
+import Favorites from './components/favorites';
+
+import './App.css';
 
 function App() {
   return (
     <>
-     
+      <Route path='/movies' component={Movies} />
+      <Route path='/favorites' component={Favorites} />
     </>
   );
 }
