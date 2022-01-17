@@ -7,11 +7,7 @@ import Footer from "../Footer/Footer";
 function App() {
   return (
     <>
-<<<<<<< HEAD
-     <Footer/>
-=======
      <Navbar/>
->>>>>>> navbar
     </>
   );
 }
