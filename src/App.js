@@ -1,16 +1,25 @@
-import { Route } from "react-router-dom";
+import { Redirect, Route, Switch } from 'react-router-dom';
 
-import Movies from "./components/movies";
-import Favorites from "./components/favorites";
+import Navbar from './Navbar/navbar';
+import Footer from './Footer/Footer';
+import Movies from './components/movies';
+import Favorites from './components/favorites';
+import MoviesDetails from './components/movedetails/index';
 
-import "./App.css";
+import './App.css';
 
 function App() {
   return (
     <>
       <Navbar />
-      <Route path="/movies" component={Movies} />
-      <Route path="/favorites" component={Favorites} />
+
+      <Switch>
+        <Route path='/Movies' component={Movies} />
+        <Route path='/Favorite' component={Favorites} />
+        <Route path='/movies-details/:id' component={MoviesDetails} />
+        <Redirect from='/' exact to='/Movies' />
+      </Switch>
+      <Footer />
     </>
   );
 }
