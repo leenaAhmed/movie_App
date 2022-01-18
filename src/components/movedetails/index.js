@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axiosInstance from '../../axiosConfig';
-// import CardDetials from '../moveCardDeials/index';
+import CardDetials from '../moveCardDeials/index';
 
 function MoviesDetails() {
   const [movie, setMovie] = useState({});
@@ -17,7 +17,7 @@ function MoviesDetails() {
 
   return (
     <div className=' moveCard'>
-      {/* <CardDetials
+      <CardDetials
         title={movie.original_title}
         id={movie.id}
         overview={movie.overview}
@@ -25,7 +25,7 @@ function MoviesDetails() {
         vote_average={movie.vote_average}
         tagline={movie.status}
         srcImge={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-      /> */}
+      />
     </div>
   );
 }
