@@ -8,7 +8,10 @@ const Favorites = () => {
 
   return (
     <>
-      <div className='d-flex flex-wrap justify-content-center mt-5'>
+      <div
+        className='d-flex flex-wrap justify-content-center mt-5 mb-5'
+        style={{ minHeight: '54vh' }}
+      >
         {favList.length === 0 ? (
           <h1>There are no favorite movies</h1>
         ) : (

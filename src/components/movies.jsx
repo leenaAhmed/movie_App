@@ -64,7 +64,7 @@ const Movies = () => {
           );
         })}
       </div>
-      <div className='container mt-5 d-flex justify-content-between'>
+      <div className='container mt-5 mb-5 d-flex justify-content-between'>
         <button
           type='button'
           className='btn btn-secondary'
